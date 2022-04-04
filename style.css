@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50% 0;
+}
+
+.canvas{
+  background: #000;
+}
+
+.wrapper{
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin: 3vh 0 0 0;
+  transform:  translate(-50%, -50%);
+  perspective: 1400px;
+}
+.frame{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background:  url('beach-bg.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 10% 30%;
+  transition: 1s;
+}
+.relaxer{
+  position: absolute;
+  height: 280px;
+  top: 30%;
+  right: 50px;
+}
+
+.object{
+  position: absolute;
+  pointer-events: none;
+  transition: 1s;
+}
+.bird{
+  height: 70px;
+  left: 40px;
+  top: 10px;
+}
+.palm{
+  height: 150px;
+  right: 4px;
+  top: 3px;
+}
+
+.wrapper:hover .frame{
+  background-position: -10% 90%;
+  transform: rotateY(5deg) rotateZ(-5deg) translateZ(20px);
+}
+
+.wrapper:hover .palm{
+  transform: 
+    translateX(-25px) 
+    translateY(5px) 
+    rotate(-10deg) 
+    scale(3);
+}
+.wrapper:hover .bird{
+  transform: translateX(15px) translateY(5px) rotate(-10deg) scale(1.2);
+}
+
+.wrapper2:hover .frame{
+  background-position: -10% 90%;
+  transform: rotateY(15deg) rotateZ(-20deg) translateZ(20px);
+}
+
+.wrapper2:hover .palm{
+  transform: 
+    translateX(-25px) 
+    translateY(5px) 
+    rotate(-10deg) 
+    scale(1.2);
+}
+.wrapper2:hover .bird{
+  transform: translateX(15px) translateY(5px) rotate(-10deg) scale(1.2);
+}
+
+.wrapper3:hover .frame{
+  background-position: -10% 90%;
+  transform: rotateY(25deg) rotateZ(-5deg) translateZ(20px);
+}
+
+.wrapper3:hover .palm{
+  transform: 
+    translateX(-25px) 
+    translateY(5px) 
+    rotate(-10deg) 
+    scale(1.2);
+}
+.wrapper3:hover .bird{
+  transform: translateX(15px) translateY(5px) rotate(-10deg) scale(1.2);
+}

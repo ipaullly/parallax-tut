@@ -1,0 +1,38 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background: palevioletred;
+}
+h3, h5{
+  text-align: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: palegoldenrod;
+  height: 80vh;
+}
+.paragraphs{
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  justify-content: space-around;
+  height: 90%;
+  background-color: black;
+  width: 60%;
+}
+p{
+  background-color: rgb(255, 127, 127);
+} */
+
+
+canvas {
+  border: 1px solid black;
+}
